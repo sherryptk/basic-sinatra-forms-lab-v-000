@@ -7,8 +7,6 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    # original_string = params["string"]
-    # @reversed_string = original_string.reverse
     @name = params["name"]
     @coach = params["coach"]
     @pg = params["pg"]
@@ -16,11 +14,6 @@ class App < Sinatra::Base
     @pf = params["pf"]
     @sf = params["sf"]
     @c = params["c"]
-# Point Guard ('pg')
-# Shooting Guard ('sg')
-# Power Forward ('pf')
-# Small Forward ('sf')
-# Center ('c')
 
     erb :team
   end
