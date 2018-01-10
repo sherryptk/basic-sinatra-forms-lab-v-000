@@ -9,7 +9,7 @@ class App < Sinatra::Base
   post '/team' do
     # original_string = params["string"]
     # @reversed_string = original_string.reverse
-    @name
+    @name = params["name"]
     @coach = params["coach"]
     @pg = params["pg"]
     @sg = params["sg"]
